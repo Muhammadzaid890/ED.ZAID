@@ -1,0 +1,47 @@
+/* 1. SARE IMPORTS SAB SE UPAR */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+/* 2. PHIR THEME CONFIGURATION */
+@theme {
+  --color-lux-white: #F1F1F1;
+  --color-lux-gold: #E9C46A;
+  --color-lux-tan: #C08552;
+  --color-lux-brown: #5E4433;
+  --color-lux-black: #212121;
+  
+  --bg-gold-grad: linear-gradient(135deg, #E9C46A 0%, #C08552 100%);
+  --bg-dark-grad: linear-gradient(180deg, #212121 0%, #5E4433 100%);
+}
+
+/* 3. PHIR BAKI KI STYLING */
+body {
+  background-color: var(--color-lux-white);
+  color: var(--color-lux-black);
+  transition: all 0.5s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark body {
+  background: var(--bg-dark-grad);
+  color: var(--color-lux-white);
+}
+
+.text-gradient-gold {
+  background: var(--bg-gold-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-premium {
+  font-family: 'Playfair Display', serif;
+}
+
+.btn-premium {
+  background: var(--bg-gold-grad);
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
