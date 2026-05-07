@@ -53,7 +53,7 @@ const About = () => {
               </p>
 
               <p className="text-lux-brown/60 dark:text-lux-white/40 text-sm md:text-base leading-relaxed font-light">
-                Humne **Earth Developers** ki buniyaad is maqsad par rakhi ke har business aik "Digital Kingdom" deserve karta hai. Hamara manna hai ke code sirf software nahi, balkay aapke vision ki buniyaad (foundation) hai. Roohe Sindh jese projects se le kar complex web applications tak, hum har cheez mein perfection aur luxury ko blend karte hain.
+               We founded Earth Developers with the mission that every business deserves its own "Digital Kingdom." We believe that code isn’t just software; it is the very foundation of your vision. From projects like Roohe Sindh to complex web applications, we blend perfection and luxury into everything we create.
               </p>
 
               <p className="text-lux-brown/60 dark:text-lux-white/40 text-sm md:text-base leading-relaxed font-light">
