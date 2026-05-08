@@ -20,20 +20,26 @@ const Navbar = () => {
     else document.documentElement.classList.remove('dark');
   }, [isDark]);
 
-  const handleScrollTo = (e, id) => {
+const handleScrollTo = (e, id) => {
     e.preventDefault();
-    const element = document.getElementById(id.replace('#', ''));
-    if (element) {
-      const offset = 80; 
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+    
+    // 1. Pehle menu band karo
     setIsOpen(false); 
+
+    // 2. Thora sa delay do (100ms) taake menu animation khatam ho jaye
+    setTimeout(() => {
+      const element = document.getElementById(id.replace('#', ''));
+      if (element) {
+        const offset = 80; 
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 150); // 150ms perfect hai mobile ke liye
   };
 
   const navLinks = [
