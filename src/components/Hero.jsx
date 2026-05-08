@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const handleWhatsApp = () => {
-    const msg = encodeURIComponent("Salam! I want a powerful online presence for my business.");
-    window.open(`https://wa.me/923000000000?text=${msg}`, '_blank');
+    const msg = encodeURIComponent("Hii! I want a powerful online presence for my business.");
+    window.open(`https://wa.me/923132099816?text=${msg}`, '_blank');
   };
 
   // Luxury Reveal Animation for Text
